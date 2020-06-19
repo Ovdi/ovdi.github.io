@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <title>ui-kit Хвостик</title>
+    <style type="text/css">
+      body {
+        font-family: 'Jost', sans-serif;
+      }
+      .formblock {
+        width: 864px;
+        height: 2582px;
+        background-color: #E5E1E1;
+        padding-left: 69px;
+        box-sizing: border-box;
+      }
+      button {
+        position: absolute;
+        height: 51px;
+        font-family: 'Jost', sans-serif;
+        font-size: 16px;
+        border-radius: 14px;
+        font-weight: 500;
+        border: 0px;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+      }
+      .btn-main {
+        width: 325px;
+        color: #FFFFFF;
+        background-color: #A1A1EB;
+        top: 60px;
+      }
+      .btn-main-img {
+        width: 325px;
+        color: #FFFFFF;
+        background-color: #A1A1EB;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      .img-btn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: #C4C4C4;
+        top: 14px;
+        left: 20px;
+      }
+      .field-btn-main-img {
+        position: absolute;
+        width: 325px;
+        height: 51px;
+        top: 141px;
+      }
+      .btn-scd {
+        width: 325px;
+        color: #A1A1EB;
+        background-color: #FFFFFF;
+        top: 221px;
+      }
+      .btn-scd-img {
+        width: 325px;
+        color: #A1A1EB;
+        background-color: #FFFFFF;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      .field-btn-scd-img {
+        position: absolute;
+        width: 325px;
+        height: 51px;
+        top: 301px;
+      }
+      .field-chek {
+        box-sizing: border-box;
+        position: absolute;
+        width: 325px;
+        height: 51px;
+        top: 381px;
+        padding-left: 23px;
+      }
+      input[type=email] {
+        display: inline-block;
+        width: 50px;
+        height: 51px;
+        border-radius: 15px;
+        margin-right: 17px;
+        border: 0;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+      }
+      .chek-1 {
+        color: #FFFFFF;
+        background-color: #A1A1EB;
+      }
+      .chek-2 {
+        background-color: #FFFFFF;
+        color: #A1A1EB;
+      }
+      .btn-smal {
+        width: 150px;
+        color: #A1A1EB;
+        background-color: #FFFFFF;
+        top: 462px;
+      }
+      .field-input {
+        position: absolute;
+        width: 325px;
+        height: 87px;
+        top: 543px;
+      }
+      input[type=phone] {
+        width: 325px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #AFAFAF;
+        border: 0;
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #4E4E4E;
+        margin-bottom: 7px;
+        margin-top: 0;
+      }
+      .field-comment {
+        position: absolute;
+        width: 325px;
+        height: 140px;
+        top: 660px;
+      }
+      input[type=text] {
+        width: 325px;
+        height: 110.58px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #AFAFAF;
+        border: 0;
+      }
+      .field-select {
+        position: absolute;
+        width: 325px;
+        height: 81px;
+        top: 830px;
+      }
+      select {
+        width: 325px;
+        height: 50.63px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #A1A1EB;
+        border: 0;
+        padding: 12px 39px 13px;
+      }
+      .img-calendar {
+        position: absolute;
+        width: 12.5px;
+        height: 12.66px;
+        left: 17px;
+        top: 49.61px;
+      }
+      .field-menu {
+        position: absolute;
+        width: 375px;
+        height: 85px;
+        top: 942px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+        border-radius: 14px 14px 0px 0px;
+      }
+      .menu-1 {
+        position: absolute;
+        width: 45px;
+        height: 41px;
+        left: 34px;
+        top: 14px;
+        display: inline-block;
+      }
+      .menu-2 {
+        position: absolute;
+        width: 45px;
+        height: 42px;
+        left: 121px;
+        top: 13px;
+      }
+      .menu-3 {
+        position: absolute;
+        width: 59px;
+        height: 40.84px;
+        left: 201px;
+        top: 14.16px;
+      }
+      .menu-4 {
+        position: absolute;
+        width: 45px;
+        height: 42px;
+        left: 295px;
+        top: 13px;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #AFAFAF;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .field-pet {
+        position: absolute;
+        padding: 11px 0 0 15px;
+        box-sizing: border-box;
+        width: 670px;
+        height: 127px;
+        top: 1057px;
+      }
+      .pet {
+        background-color: #FFFFFF;
+        display: inline-block;
+        margin-right: 6px;
+        width: 97px;
+        height: 98px;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+        border-radius: 20px;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #A1A1EB;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -30px;
+      }
+      .collar {
+        position: absolute;
+        width: 98px;
+        height: 131px;
+        top: 1214px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+        border-radius: 20px;
+      }
+      .collar-2 {
+        width: 80px;
+        height: 80px;
+        background: #F4F5F9;
+        border-radius: 16px;
+        margin: 7px 7px 47px 7px;
+      }
+      h5 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #AFAFAF;
+        margin: 0;
+      }
+      .field-tuz {
+        position: absolute;
+        width: 298px;
+        height: 221px;
+        top: 1375px;
+      }
+      .field-tuz-card {
+        position: absolute;
+        top: 160px;
+        left: 13px;
+        width: 272px;
+        height: 60.55px;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+      }
+      .point {
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 3px;
+        background-color: #A1A1EB;
+
+      }
+      h6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #4E4E4E;
+        position: absolute;
+        margin: 0px;
+      }
+      h7 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #4E4E4E;
+        position: absolute;
+      }
+      .field-tuz-2 {
+        position: absolute;
+        width: 199px;
+        height: 298px;
+        top: 1626px;
+      }
+      .fielg-tuz-card-2 {
+        position: absolute;
+        right: 19px;
+        width: 180px;
+        height: 298px;
+        background: #FFFFFF;
+        border-radius: 17px;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+      }
+      h8 {
+        position: absolute;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 122%;
+        color: #AFAFAF
+      }
+      .card-1 {
+        position: absolute;
+        top: 1954px;
+        width: 345px;
+        height: 131px;
+        background-color: #FFFFFF;
+        border-radius: 17px;
+        box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);
+      }
+      h9 {
+        position: absolute;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        color: #4E4E4E;
+      }
+      h10 {
+        position: absolute;
+        width: 197px;
+        height: 72px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 122%;
+        color: #AFAFAF;
+        left: 19px;
+        top: 46px;
+      }
+      .round {
+        position: absolute;
+        left: 228px;
+        top: 16px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      .oval{
+        position: absolute;
+        width: 90px;
+        height: 16.12px;
+        left: 233px;
+        top: 100.77px;
+        background: #A1A1EB;
+        border-radius: 13px;
+      }
+      h11{
+        position: absolute;
+        left: 237px;
+        top: 101px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 14px;
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="formblock">
+
+
+      <button class="btn-main" type="button" name="button">Кнопка</button> <br>
+      <div class="field-btn-main-img">
+        <button class="btn-main-img" type="button" name="button">Кнопка</button>
+        <div class="img-btn">
+        </div>
+      </div>
+      <button class="btn-scd" type="button" name="button">Кнопка</button> <br>
+      <div class="field-btn-scd-img">
+        <button class="btn-scd-img" type="button" name="button">Кнопка</button> <br>
+        <div class="img-btn">
+        </div>
+      </div>
+      <div class="field-chek">
+        <input class="chek-1" type="email" name="" value="3">
+        <input class="chek-2" type="email" name="" value="|">
+        <input class="chek-2" type="email" name="" value="">
+        <input class="chek-2" type="email" name="" value="">
+      </div>
+      <button class="btn-smal" type="button" name="button">Кнопка</button>
+      <div class="field-input">
+        <h1>Номер телефона</h1>
+        <input type="phone" name="" value="  +7">
+      </div>
+      <div class="field-comment">
+        <h1>Комментарии к заказу</h1>
+        <input type="text" name="" value="  |" cols="10">
+      </div>
+      <div class="field-select">
+        <h1>Выберите дату и время доставки</h1>
+        <img class="img-calendar" src="calendar.png" alt="">
+        <select class="" name="">
+          <option value="">13 июня, сб, с 18:00 до 23:00</option>
+          <option value="">14 июня, вс, с 18:00 до 23:00</option>
+          <option value="">15 июня, пн, с 18:00 до 23:00</option>
+          <option value="">16 июня, вт, с 18:00 до 23:00</option>
+          <option value="">17 июня, ср, с 18:00 до 23:00</option>
+          <option value="">18 июня, вс, с 18:00 до 23:00</option>
+        </select>
+      </div>
+      <div class="field-menu">
+        <div class="menu-1">
+          <img style="width: 26px; height: 26px; margin: 0 9px 0 10px;" class=""src="menu-1.png" alt=""><br>
+          <h3>Меню</h3>
+        </div>
+        <div class="menu-2">
+          <img style="width: 25px; height: 25px; margin: 0 13px 0 7px;" src="menu-2.png" alt=""><br>
+          <h3>Корзина</h3>
+        </div>
+        <div class="menu-3">
+          <img style="width: 22px; height: 25.29px; margin: 0 18px 0 19px;" src="menu-3.png" alt=""><br>
+          <h3>Поддержка</h3>
+        </div>
+        <div class="menu-4">
+          <img style="width: 24px; height: 24px; margin: 0 12px 0 9px;" src="menu-4.png" alt=""><br>
+          <h3>Профиль</h3>
+        </div>
+      </div>
+      <div class="field-pet">
+        <div class="pet">
+          <img style="weight: 59.25px; height: 60px; margin: 15px 15px 23px 22px; " src="pet-1.png" alt=""><br>
+          <h4>Собака</h4>
+        </div>
+        <div class="pet">
+          <img style="width: 57.78px; height: 60px; margin: 15px 21px 23px 18px; " src="pet-2.png" alt="">
+          <h4>Кошка</h4>
+        </div>
+        <div class="pet">
+          <img style="width: 50px; height: 50px; margin: 18px 24px 30px 23px;" src="pet-3.png" alt="">
+          <h4>Грызун</h4>
+        </div>
+        <div class="pet">
+          <img style="width: 54px; height: 54px; margin: 18px 22px 26px 21px;" src="pet-4.png" alt=""><br>
+          <h4>Рыбка</h4>
+        </div>
+        <div class="pet">
+          <img style="width: 50px; height: 50px; margin: 22px 24px 26px 23px;" src="pet-5.png" alt="">
+          <h4>Птичка</h4>
+        </div>
+        <div class="pet">
+          <img style="width: 50px; height: 50px; margin: 22px 24px 26px 23px;" src="pet-6.png" alt="">
+          <h4>Другое</h4>
+        </div>
+      </div>
+      <div class="collar">
+        <div class="collar-2">
+          <img style="weight: 80px; height: 80px; " src="collar.png" alt="">
+          <h5>Ошейники</h5>
+        </div>
+      </div>
+      <div class="field-tuz">
+        <img style="weight: 298px; height: 191.74px; border-radius: 20px; box-shadow: 0px 1px 6px rgba(35, 52, 208, 0.2);"src="tuz.png" alt="">
+        <div class="field-tuz-card">
+          <div style="top: 19px; left: 24px;"class="point">
+          </div>
+          <h6 style="top: 9px;left: 39px;">Тузик</h6>
+          <img style="weight: 19px; height: 19px; position: absolute; left: 229px; top: 11px; "src="v.png" alt="">
+          <h7 style="top: 30px;left: 23px;">Вельш-корги</h7>
+          <h7 style="top: 30px;left: 210px;">2 года</h7>
+        </div>
+      </div>
+      <div class="field-tuz-2">
+        <div class="fielg-tuz-card-2">
+          <img style="weight: 146px; height: 147.48px; border-radius: 20px;position: absolute; left: 53px; top: 25.25px; " src="tuz-2.png" alt="">
+          <div style="top: 188px; left: 15px;"class="point">
+          </div>
+          <h6 style="top: 176px;left: 29px;">Тузик</h6>
+          <h7 style="top: 202px;left: 15px;">Вельш-корги, 2 года</h7>
+          <h8 style="weight:149px; height: 50px; top: 232px;left: 14px;">Последний заказ от 10.06 Набор «Гладкая шерстка» для питомца на 30 дней</h8>
+          <img style="weight: 39px; height: 34.32px; position: absolute; top: 12px; left: 10px; " src="heart.png" alt="">
+          <img style="weight: 15px; height: 15.15px; position: absolute; left: 99px; top: 181px; "src="v.png" alt="">
+        </div>
+      </div>
+      <div class="card-1">
+        <h9 style="top: 10px;left: 19px;">Классика жанра</h9>
+        <h10>Еда, которую мы приготовили специально для вашего питомца, с учетом всех его особенностей</h10>
+        <div class="round">
+        </div>
+        <img style="weight: 84px; height: 84.65px; position: absolute; left: 236px; top: 15px; "src="bowl.png" alt="">
+        <div class="oval">
+        </div>
+        <h11>от 160 ₽/день</h11>
+      </div>
+    </div>
+  </body>
+</html>
